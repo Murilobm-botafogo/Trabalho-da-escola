@@ -1,0 +1,195 @@
+/* Configurações Globais */
+:root {
+    --color-background: #0d0d0d;
+    --color-text: #ffffff;
+    --color-accent: #ff4500; /* Laranja/Vermelho para destaque */
+    --color-line: #333333;
+    --color-purple: #9933cc; /* Roxo para o nome do autor */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Título Principal */
+header h1 {
+    font-size: 2.5em;
+    text-align: left;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+/* Container Principal */
+main {
+    max-width: 900px; /* Limita a largura central do conteúdo */
+    margin: 0 auto;
+}
+
+/* Estilo para cada Seção de Bloco (garante que tudo fique empilhado) */
+.block-section {
+    display: flex; /* Mantém o layout lado a lado DENTRO de cada bloco */
+    align-items: flex-start;
+    justify-content: space-between; /* Espaço entre as duas partes do bloco */
+    padding: 20px 10px;
+    margin-bottom: 20px; /* Espaço entre os blocos */
+    border-bottom: 1px solid var(--color-line); /* Linha divisória sutil */
+}
+
+/* Ajuste do último bloco para remover a linha */
+.citacao-block {
+    padding: 40px 10px;
+}
+
+
+/* Estilos das duas colunas DENTRO de cada bloco */
+.content-left {
+    flex-basis: 45%; /* Ocupa 45% do espaço */
+    padding-right: 20px;
+}
+
+.content-right {
+    flex-basis: 55%; /* Ocupa 55% do espaço */
+    text-align: right;
+}
+
+/* Estilos de Títulos Secundários */
+h2 {
+    font-size: 1.8em;
+    color: var(--color-accent); /* Deixando os títulos em destaque */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao-block .content-left {
+    order: 1; /* Logo à esquerda */
+    text-align: left;
+}
+.apresentacao-block .content-right {
+    order: 2; /* Texto à direita */
+    text-align: left;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+}
+
+/* FORMAÇÃO */
+.formacao-block .content-left {
+    order: 1; /* Texto à esquerda */
+    text-align: left;
+}
+.formacao-block .content-right {
+    order: 2; /* Imagem à direita */
+    text-align: right;
+}
+.formacao-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* PROJETOS FUTUROS (Bloco de coluna única) */
+.projetos-block {
+    display: block; /* Volta a ser um bloco normal */
+    text-align: center;
+    padding-top: 40px;
+}
+
+.cmtb-logo img {
+    max-width: 300px;
+    margin: 20px 0;
+    height: auto;
+}
+
+/* EXPERIÊNCIA */
+.experiencia-block .content-left {
+    order: 1; /* Texto à esquerda */
+    text-align: left;
+}
+.experiencia-block .content-right {
+    order: 2; /* Imagem à direita */
+    text-align: right;
+}
+.experiencia-block img {
+    max-width: 250px;
+    height: auto;
+}
+
+
+/* CITAÇÃO FINAL (Novos estilos) */
+.citacao-block {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.citacao-hanayama {
+    display: block;
+    font-size: 1.8em; /* Fonte maior para a frase */
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.frase-branca {
+    color: var(--color-text); /* Cor branca conforme solicitado */
+    display: block;
+}
+
+.autor-roxo {
+    display: block;
+    font-size: 0.7em; /* Mantém o nome menor */
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--color-purple); /* Cor roxa conforme solicitado */
+}
+
+
+/* Responsividade (Para telas menores) */
+@media (max-width: 650px) {
+    /* Faz com que os blocos de duas colunas virem blocos empilhados em telas pequenas */
+    .block-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-left,
+    .content-right {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .apresentacao-block .content-right h2, 
+    .formacao-block .content-left h2,
+    .experiencia-block .content-left h2 {
+        text-align: center;
+    }
+
+    .profile-image,
+    .formacao-image,
+    .experiencia-block img {
+        margin: 10px auto;
+        display: block;
+    }
+}
