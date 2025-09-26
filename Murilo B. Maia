@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MURILO B. MAIA - Muay Thai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>MURILO B. MAIA</h1>
+    </header>
+
+    <main>
+        <section class="block-section apresentacao-block">
+            <div class="content-left">
+                <img src="muay-thai-logo-placeholder.png" alt="Logo Muay Thai" class="profile-image">
+            </div>
+            <div class="content-right">
+                <h2>Apresentação:</h2>
+                <p>Meu nome é Murilo Benevides Maia, tenho **26 anos**, sou formado em **educação física** e luto **Muay Thai** a **10 anos**. Meu kruang é **preto** e sou treinador na academia **"Chute boxe hauer"**.</p>
+            </div>
+        </section>
+
+        <section class="block-section formacao-block">
+            <div class="content-left">
+                <h2>Formação:</h2>
+                <p>Ensino médio completo e faculdade de **educação física pela Uninter**.</p>
+            </div>
+            <div class="content-right">
+                <img src="muay-thai-luta-placeholder.jpg" alt="Lutadores de Muay Thai" class="formacao-image">
+            </div>
+        </section>
+
+        <section class="block-section projetos-block">
+            <h2>Projetos futuros:</h2>
+            <p>Conseguir o **kruang de grão mestre** e virar **campeão brasileiro de muay thai**.</p>
+            <div class="cmtb-logo">
+                 <img src="cmtb-logo-placeholder.png" alt="Confederação de Muay Thai do Brasil (CMTB)">
+            </div>
+        </section>
+
+        <section class="block-section experiencia-block">
+             <div class="content-left">
+                <h2>Experiência:</h2>
+                <p>Aos 14 atuei por algumas semanas como jardineiro para juntar uma grana para comprar meus primeiros materiais de luta. Depois disso só fui voltar a trabalhar quando servi o quartel, onde ingressei aos 18 anos e lá fiquei até esse ano, quando comecei a dar aulas de Muay Thai em uma academia do meu bairro.</p>
+            </div>
+            <div class="content-right">
+                <img src="guerreiro-muay-thai-placeholder.jpg" alt="Desenho de um guerreiro de Muay Thai">
+            </div>
+        </section>
+
+        <section class="citacao-block">
+            <blockquote class="citacao-hanayama">
+                <span class="frase-branca">“Porque um guerreiro sem nenhuma cicatriz.... não é um guerreiro de jeito nenhum.”</span>
+                <cite class="autor-roxo">- Kaoru Hanayama</cite>
+            </blockquote>
+        </section>
+    </main>
+
+</body>
+</html>
